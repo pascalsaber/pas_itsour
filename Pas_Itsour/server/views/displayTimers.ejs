@@ -1,0 +1,21 @@
+<%- include ("header.ejs") %>
+<%- include ("menu.ejs") %>
+<main>
+    <div id="displayTimers">
+        <table>
+            <tr>
+                <th>השהיית ממסר (אלפית השנייה)</th>
+                <th><%= item.memsar_delay %></th>
+            </tr>
+            <tr>
+                <th>השהיית החיישן (אלפית השנייה)</th>
+                <th><%= item.ldr_delay %></th>
+              </tr>
+              <tr>
+                <th>השהיית עדכון הזמנים (אלפית השנייה)</th>
+                <th><%= item.updateTimers %></th>
+              </tr>
+          </table>
+    </div>
+</main>
+<%- include ("footer.ejs") %>

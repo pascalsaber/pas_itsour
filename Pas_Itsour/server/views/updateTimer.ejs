@@ -1,0 +1,20 @@
+<%- include ("header.ejs") %>
+<%- include ("menu.ejs") %>
+<main>
+    <div id="addform">
+        <form action="" method="post">
+            <label for="memsar_delay">השהיית הממסר (באלפית השנייה)</label>
+            <input type="text" name="memsar_delay" value="<%= item.memsar_delay %>" />
+            <br>
+            <label for="ldr_delay">השהיית החיישן (באלפית השנייה)</label>
+            <input type="text" name="ldr_delay" value="<%= item.ldr_delay %>" />
+            <br>
+            <label for="updateTimers">השהיית עדכון הזמנים(באלפית השנייה)</label>
+            <input type="text" name="updateTimers" value="<%= item.updateTimers %>" />
+            <br>
+            <br>
+            <button>עדכן</button>
+        </form> 
+    </div>
+</main>
+<%- include ("footer.ejs") %>
